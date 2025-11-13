@@ -332,7 +332,7 @@ $(document).ready(function() {
                                         buttonstyle5: `
                                         <button id="" class="crtbtn button5 cart-button-style5" style="background-color: ${settingdata.custom_button_color || '#007bff'};">
                                             <div class="button555" style="background-color: ${settingdata.custom_button_color || '#007bff'};">
-                                                <span class="button__text">${settingdata.custom_text || 'Add to Cart'}</span>
+                                                <span class="button__text" style="background-color: ${settingdata.custom_text_color || '#007bff'}; >${settingdata.custom_text || 'Add to Cart'}</span>
                                                 <span class="button__icon" style="background-color: ${settingdata.custom_button_color || '#007bff'};">
                                                     <svg width="24" height="24" stroke-width="2" fill="none">
                                                         <line x1="12" y1="5" x2="12" y2="19"></line>
