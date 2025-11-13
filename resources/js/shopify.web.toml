@@ -1,0 +1,3 @@
+type="backend"
+[commands]
+dev = "npm run --prefix ../.. watch"

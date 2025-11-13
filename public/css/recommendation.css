@@ -1,0 +1,110 @@
+body { margin: 0; }
+
+.recommendation_img { max-width: 100%; }
+
+.section_padding { padding: 40px; text-align: left;}
+
+.recommendation-container { max-width: 1300px; margin: 0 auto; }
+
+.recommendation-container .primary_title { background-color: #f7f7f7; border: 1px solid #ebebeb; padding: 20px 40px; font-size: 20px; font-weight: 700; line-height: 30px; box-sizing: border-box; margin: 0; }
+
+.recommendation-container .primary_text { font-size: 14px; font-weight: 500; line-height: 27px; padding: 20px 40px; box-sizing: border-box; margin: 0; }
+
+.recommendation-container .slider{position: relative;}
+
+.recommendation-container .slider .banner_slider .slick-slide img.recommendation_img { width: 100%; }
+
+.recommendation-container .slider .banner_slider .slick-prev, .recommendation-container .slider .banner_slider .slick-next {display: none !important;}
+
+.recommendation-container .slide-arrow { position: absolute; top: 50%; margin-top: -15px; background: transparent; border: none; z-index: 1; cursor: pointer; box-shadow: none; padding: 0;}
+
+.recommendation-container .slide-arrow.prev-arrow { left: 40px; }
+
+.recommendation-container .slide-arrow.next-arrow { right: 40px; }
+
+.recommendation-container .slide-arrow img.recommendation_img, .recommendation-container .slide-arrow img.recommendation_img { width: 25px; height: auto; }
+
+.recommendation-container .slide-arrow.slick-disabled { cursor: not-allowed; opacity: 0.5; }
+
+.recommendation-container .others_app { display: grid; grid-template-columns: repeat(3, minmax(295px, 1fr)); gap: 30px; margin: 40px 0; }
+
+.recommendation-container .others_app .app { box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 12%); background: #ffffff; border-radius: 5px;}
+
+.recommendation-container .others_app .app .head {  margin: 0 30px 20px 30px}
+
+.recommendation-container .others_app .app .head .heading { font-size: 15px; font-weight: 600; line-height: 28px; margin: 0 0 6px 0; color: #0D0101}
+
+.recommendation-container .others_app .app .head .heading.active { color: #9670F3 }
+
+.recommendation-container .others_app .app .head .link { color: #575757; border-bottom: 1px solid #575757; font-size: 14px; font-weight: 500; text-decoration: none;}
+
+.recommendation-container .others_app .app .img_box {  margin: 30px 30px 15px 30px}
+
+.recommendation-container .others_app .app .description { margin: 0 30px 20px 30px; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; display: -webkit-box; font-size: 14px; font-weight: 400; line-height: 22px; color: rgba(0 0 0 / 54%);}
+
+.recommendation-container .others_app .app .description .list { color: #0000008A; font-size: 15px; font-weight: 400; line-height: 22px; padding: 4px 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+.recommendation-container .others_app .app .description .list::marker { color: #5E8E3E; font-size: 20px; }
+
+.recommendation-container .others_app .app .recommendation-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-top: 1px dashed #dddddd;  padding: 13px 30px 16px 30px; box-sizing: border-box;}
+
+/*.recommendation-container .others_app .app .recommendation-footer .btn { color:#000000; text-decoration: none; border: 1px solid rgba(0 0 0 / 16%); border-radius: 4px; padding: 10px 15px; font-size: 14px; font-weight: 500; line-height: 18px; }*/
+
+.recommendation-container .others_app .app .recommendation-footer .rating { display: flex;    align-items: center;    gap: 10px;}
+
+.recommendation-container .others_app .app .recommendation-footer .rating span { font-size: 14px;    font-weight: 500;    line-height: 22px;}
+
+@media screen and (max-width: 320px) {
+    body { display: none; }
+}
+
+@media screen and (max-width: 550px) {
+    .section_padding { padding: 15px;}
+
+    .recommendation-container .others_app { grid-template-columns: repeat(1, minmax(240px, 1fr)); margin: 15px 0;}
+
+    .recommendation-container .primary_title { font-size: 15px; line-height: 22px; text-align: center; padding: 15px 40px; }
+
+    .recommendation-container .primary_text { font-size: 14px; line-height: 22px; padding: 15px 30px; text-align: center; }
+
+    .recommendation-container .slide-arrow.prev-arrow { left: 10px; }
+
+    .recommendation-container .slide-arrow.next-arrow { right: 10px; }
+
+    .recommendation-container .others_app .app .head { margin: 0 15px 15px 15px; }
+
+    .recommendation-container .others_app .app .img_box { margin: 15px 15px 10px 15px; }
+
+    .recommendation-container .others_app .app .head .heading { font-size: 15px; line-height: 22px;}
+
+    .recommendation-container .others_app .app .description { font-size: 14px; line-height: 20px; margin: 0 15px 15px 15px; }
+
+    .recommendation-container .others_app .app .recommendation-footer { padding: 14px 15px;}
+}
+
+@media screen and (min-width: 551px) and (max-width: 1024px) {
+    .section_padding { padding: 20px; }
+
+    .recommendation-container .others_app .app .head { margin: 0 15px 15px 15px; }
+
+    .recommendation-container .others_app .app .img_box { margin: 15px 15px 15px 15px; }
+
+    .recommendation-container .others_app .app .description { margin: 0 15px 15px 15px; }
+
+    .recommendation-container .others_app .app .head { margin: 0 15px 10px 15px; }
+
+    .recommendation-container .others_app .app .img_box { margin: 15px 15px 10px 15px; }
+
+    .recommendation-container .others_app .app .head .heading { font-size: 15px; line-height: 24px;}
+
+    .recommendation-container .others_app .app .description { font-size: 14px; line-height: 22px; margin: 0 15px 10px 15px; }
+
+    .recommendation-container .others_app .app .recommendation-footer { padding: 10px 15px;}
+
+    .recommendation-container .others_app { grid-template-columns: repeat(3, minmax(245px, 1fr)); grid-gap: 15px;  margin: 20px 0;}
+}
+
+
+@media screen and (min-width: 551px) and (max-width: 799px) {
+    .recommendation-container .others_app { grid-template-columns: repeat(2, minmax(245px, 1fr)); grid-gap: 15px; }
+}

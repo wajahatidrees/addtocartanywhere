@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "1737c11ee064d7ec74c3dbf082587ee5"
+application_url = "https://addtocartanywhere.test/"
+embedded = true
+name = "Add-to-cart-anywhere"
+handle = "add-to-cart-anywhere"
+
+[webhooks]
+api_version = "2023-10"
+
+[auth]
+redirect_urls = [
+  "https://addtocartanywhere.test/auth/callback",
+  "https://addtocartanywhere.test/auth/shopify/callback",
+  "https://addtocartanywhere.test/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[app_preferences]
+url = "https://addtocartanywhere.test/authenticate"
+
+[build]
+dev_store_url = "qualityassurance123.myshopify.com"
+automatically_update_urls_on_dev = false

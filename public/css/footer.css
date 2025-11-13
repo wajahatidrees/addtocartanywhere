@@ -1,0 +1,70 @@
+.eosh_footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    padding: 30px 60px 0px 60px;
+    gap: 15px;
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.eosh_chat_email {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.eosh_footer-text {
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.eosh_social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+@media (max-width: 480px) {
+    .eosh_footer {
+        display: flex;
+        gap: 10px;
+    }
+
+    .eosh_chat_email {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .eosh_chat_email {
+        gap: 10px;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .eosh_footer {
+        display: flex;
+        gap: 10px;
+    }
+
+    .eosh_chat_email {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .eosh_chat_email {
+        gap: 10px;
+    }
+
+}

@@ -1,0 +1,144 @@
+.eosh-hiddenDropDown {
+    position: relative;
+    z-index: 1;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-decoration: none; 
+    line-height: 1.2;
+    letter-spacing: 0px;
+    width: 100%; height: 40px; 
+    font-weight: normal; 
+    font-style: normal;
+    font-family: "Lato";
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    background-color: transparent; 
+    border-width: 1px; 
+    border-color: rgb(51, 51, 51);
+    border-radius: 0px; border-style: solid;
+     margin: 5px 0px 0px;
+    padding: 0px 10px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, rgb(51, 51, 51) 50%), linear-gradient(135deg, rgb(51, 51, 51) 50%, transparent 50%); 
+    background-position: calc(100% - 14px) calc(1em + 2px), calc(100% - 10px) calc(1em + 2px); background-size: 4px 4px;
+    background-repeat: no-repeat;
+    appearance: none;
+    text-indent: 1px;
+}
+.labeldropdown{
+    margin: 5px 0px 0px; 
+    font-size: 20px;
+     color: rgb(160, 116, 116); 
+     font-weight: normal;
+      font-style: italic; 
+      font-family: arial, Helvetica;
+}
+
+.labeldropdown{
+    margin: 5px 0px 0px; 
+    font-size: 20px;
+     color: rgb(160, 116, 116); 
+     font-weight: normal;
+      font-style: italic; 
+      font-family: arial, Helvetica;
+}
+
+.eosh-dropdown1{
+    position: relative;
+    z-index: 1;
+    overflow-wrap: break-word;
+    white-space: normal; 
+    text-decoration: none;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    width: 100%;
+    height: 40px;
+    font-weight: normal; 
+    font-style: normal; 
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+    color: rgb(51, 51, 51);
+    background-color: transparent; border-width: 1px; 
+    border-color: rgb(51, 51, 51); border-radius: 0px; 
+    border-style: solid;
+    margin: 5px 0px 0px;
+    padding: 0px 10px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, rgb(51, 51, 51) 50%), linear-gradient(135deg, rgb(51, 51, 51) 50%, transparent 50%); background-position: calc(100% - 14px) calc(1em + 2px), calc(100% - 10px) calc(1em + 2px);
+     background-size: 4px 4px; background-repeat: no-repeat; 
+     appearance: none; text-indent: 1px;
+}
+
+.labeldropdown2{
+    margin: 5px 0px 0px; 
+    font-size: 20px; 
+    color: rgb(160, 116, 116);
+     font-weight: normal; 
+     font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+.eosh-dropdown2{
+    position: relative;
+    z-index: 1; overflow-wrap: break-word;
+    white-space: normal;
+    text-decoration: none; 
+    line-height: 1.2;
+    letter-spacing: 0px; 
+    width: 100%;
+    height: 40px;
+    font-weight: normal; 
+    font-style: normal; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px; 
+    color: rgb(51, 51, 51);
+    background-color: transparent;
+    border-width: 1px; 
+    border-color: rgb(51, 51, 51); border-radius: 0px; 
+    border-style: solid;
+    margin: 5px 0px 0px;
+    padding: 0px 10px;
+    cursor: pointer; 
+    background-image: linear-gradient(45deg, transparent 50%, rgb(51, 51, 51) 50%), linear-gradient(135deg, rgb(51, 51, 51) 50%, transparent 50%);
+    background-position: calc(100% - 14px) calc(1em + 2px), calc(100% - 10px) calc(1em + 2px);
+    background-size: 4px 4px; background-repeat: no-repeat; 
+    appearance: none;
+    text-indent: 1px;
+}
+
+.labeldropdown3{
+    margin: 5px 0px 0px; 
+    font-size: 20px;
+    color: rgb(160, 116, 116);
+    font-weight: normal; 
+    font-style: italic;
+     font-family:Helvetica  Arial, Helvetica, sans-serif
+}
+
+.eosh-dropdown3{
+    position: relative;
+    z-index: 1; 
+    overflow-wrap: break-word; 
+    white-space: normal;
+    text-decoration: none;
+    line-height: 1.2;
+    letter-spacing: 0px; width: 100%; height: 40px; font-weight: normal;
+    font-style: normal;
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    background-color: transparent; 
+    border-width: 1px; 
+    border-color: rgb(51, 51, 51);
+    border-radius: 0px;
+    border-style: solid;
+    margin: 5px 0px 0px; 
+    padding: 0px 10px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, rgb(51, 51, 51) 50%), linear-gradient(135deg, rgb(51, 51, 51) 50%, transparent 50%); background-position: calc(100% - 14px) calc(1em + 2px), calc(100% - 10px) calc(1em + 2px); 
+    background-size: 4px 4px; 
+    background-repeat: no-repeat; 
+    appearance: none;
+    text-indent: 1px;
+}
+

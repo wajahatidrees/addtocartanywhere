@@ -1,0 +1,95 @@
+body { margin: 0; }
+
+img { max-width: 100%;}
+
+.app_popup_container { position: fixed; top: 0; left: 0; z-index: 1;}
+
+.app_popup_container .app_popup { position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,.8); place-items: center; display: grid; }
+
+.app_popup_container .app_popup .app_popup_content { position: relative; width: 1200px; max-width: 95vw; border-radius: .5rem; background-color: #ffffff; padding: 30px; box-sizing: border-box; border-radius: 5px; border: 1px solid #ececec; box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.17) }
+
+.app_popup_container .app_popup .app_popup_content .popup_header { text-align: center; border-bottom: 1px solid #dddddd; padding: 0 30px;}
+
+.app_popup_container .app_popup .app_popup_content .header_tag_line { font-size: 14px; font-weight: 400; line-height: 20px; color: #222222; }
+
+.app_popup_container .app_popup .app_popup_content .popup_header .header_heading { font-size: 15px; font-weight: 500; line-height: 28px; color: #353535; padding-top: 5px; padding-bottom: 10px; margin: 0; }
+
+.app_popup_container .app_popup .app_popup_content .popup_body { text-align: center; padding: 20px 0; }
+
+.app_popup_container .app_popup .app_popup_content .popup_body .body_heading { font-size: 20px; font-weight: 600; line-height: 30px; margin: 0; color: #353535; padding-bottom: 10px; box-sizing: border-box;}
+
+.app_popup_container .app_popup .app_popup_content .popup_body .body_tag_line { display: block; font-size: 14px; font-weight: 400; line-height: 17px; color: #595959; margin-bottom: 15px; }
+
+.app_popup_container .app_popup .app_popup_content .popup_body .body_text { font-size: 14px; font-weight: 400; line-height: 24px; color: #626262; padding-bottom: 10px; box-sizing: border-box;}
+
+.app_popup_container .app_popup .app_popup_content .popup_body .body_btn { font-size: 18px; font-weight: 500; line-height: 26px; border: none; background: #377e62; color: #ffffff; padding: 7px 12px; border-radius: 5px; width: fit-content;}
+
+.app_popup_container .app_popup .app_popup_content .popup_footer { border-top: 1px solid #d9d9d9; padding: 25px 30px 0; display: flex; justify-content: space-between; align-items: center; }
+
+.app_popup_container .app_popup .app_popup_content .popup_footer .footer_btn { background: #f2f2f2; color: #505050; box-shadow: none; border: 1px solid #d9d9d9; padding: 11px 14px; border-radius: 5px; font-size: 16px; font-weight: 500; line-height: 16px; }
+
+.app_popup_container .app_popup .app_popup_content .popup_footer .footer_link { font-size: 14px; font-weight: 500; line-height: 16px; text-decoration: none; padding-left: 10px; color: #3490dc; }
+
+
+/* Select Language */
+.dropdown { max-width: 230px; margin: 0 auto; border: 1px solid #d9d9d9; border-radius: 5px; }
+
+.dropdown .header { border-bottom: 1px solid #d9d9d9; position: relative; color: #505050; padding: 13px 15px; cursor: pointer; text-align: left; }
+
+.dropdown .header:after { content: ""; position: absolute; background-image: url("chevron.png"); background-repeat: no-repeat; background-position: center; background-size: auto; right: 15px; top: 15px; width: 15px; height: 15px; }
+
+.dropdown .language_list { list-style: none; max-height: 180px; overflow-y: auto; padding: 0; margin: 0; }
+
+.dropdown .language_list .list_item { display: none; align-items: center; gap: 10px; font-weight: 400; padding: 15px; text-align: left; border-bottom: 1px solid #d9d9d9; }
+
+.dropdown .language_list .list_item:last-child { border-bottom: none; }
+
+.app_popup_container .app_popup .app_popup_content .popup_body { padding: 20px 30px; }
+
+.app_popup_container .app_popup .app_popup_content { padding-left: 0; padding-right: 0; }
+
+/* App Embeds */
+.app-embed .popup_body { display: flex; justify-content: space-between; gap: 30px; align-items: center; padding: 0; }
+
+.app-embed .popup_body .text_block { text-align: left; }
+
+.app-embed .popup_body .text_block .body_message { border: 1px solid #eee2be; background-color: #FAF1D9; font-size: 11px; font-weight: 400; padding: 6px; display: flex; align-items: center; gap: 10px; color: #595959; width: fit-content; margin: 20px 0 0 ; }
+
+.app_popup_container .app_popup.app-embed .app_popup_content .popup_footer { border: none; padding: 25px 30px 0; }
+
+/* Congratulation */
+.app_popup_container .app_popup.congratulation .app_popup_content .body_heading { font-size: 46px; font-weight: 500; line-height: 60px; color: #353535; }
+
+.app_popup_container .app_popup.congratulation .app_popup_content .body_text { font-size: 14px; font-weight: 400; line-height: 20px; color: #353535; margin: 0; }
+
+.app_popup_container .app_popup.congratulation .app_popup_content .popup_footer { justify-content: center; gap: 20px; padding: 25px 10px 0; }
+
+.app_popup_container .app_popup.congratulation .app_popup_content .popup_footer .footer_btn { background-color: #377E62; color: #ffffff; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .app_popup_container .app_popup .app_popup_content { padding: 15px; }
+
+    .app_popup_container .app_popup .app_popup_content .popup_header .header_heading { font-size: 15px; line-height: 22px; }
+
+    .app_popup_container .app_popup .app_popup_content .popup_body . { font-size: 14px; line-height: 24px; }
+
+    .app_popup_container .app_popup .app_popup_content .popup_body .body_tag_line { font-size: 14px; margin-bottom: 10px; }
+
+    .app_popup_container .app_popup .app_popup_content .popup_footer .footer_btn { font-size: 14px; }
+
+    /* Select Language */
+    .app_popup_container .app_popup.language .app_popup_content .popup_body { padding: 10px 15px; }
+
+
+    /* App Embeds */
+    .app_popup_container .app_popup.app-embed .app_popup_content  .popup_body { flex-direction: column; }
+
+    .app_popup_container .app_popup.app-embed .app_popup_content  .popup_body .text_block .body_message { margin: 10px 0 0; }
+
+    .app_popup_container .app_popup.app-embed .app_popup_content  .popup_footer { padding: 15px 0 0; }
+
+    /* Congratulation */
+    .app_popup_container .app_popup.congratulation .app_popup_content  .body_heading { font-size: 30px; line-height: 40px; }
+
+    .app_popup_container .app_popup.congratulation .app_popup_content  .body_text { font-size: 13px; line-height: 17px; }
+}

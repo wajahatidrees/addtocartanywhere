@@ -1,0 +1,685 @@
+  /* .container {
+    background-color: #eee;
+    padding: 50px;
+    border: 2px solid limegreen;
+    border-radius: 16px;
+  } */
+  
+  /* .counter-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border: 2px solid limegreen;
+    border-radius: 40px;
+    background-color: #fff;
+  } */
+  
+  .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.2s ease;
+  }
+  
+  .plus {
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+  }
+  
+  .minus {
+    background-color: white;
+    color: #555;
+  }
+  
+  .count {
+    font-size: 24px;
+    font-weight: 600;
+    width: 30px;
+    text-align: center;
+  }
+
+
+
+  /* button css */
+/* .preview-btn-container {
+background-color: #eee;
+padding: 50px;
+border: 2px solid limegreen;
+border-radius: 16px; */
+/* } */
+
+.preview-btn-container .button{
+background: #000;
+color: #fff;
+padding: 10px 22px;
+font-size: 14px;
+cursor: pointer;
+border-radius: 20px;
+}
+
+.preview-btn-container .button img{
+margin-right: 10px;
+}
+
+
+/* quanity button css end */
+
+/* Dropdown container */
+.custom-dropdown {
+    margin-top: 8px;
+}
+.custom-dropdown .dropdown {
+width: 100%;
+max-width:100%!important;
+margin: auto;
+border: 1px solid #ccc;
+border-radius: 10px;
+background: white;
+}
+
+/* Header */
+.custom-dropdown .dropdown-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 16px;
+cursor: pointer;
+font-size: 18px;
+border-bottom: 1px solid #ddd;
+}
+
+/* Arrow icon */
+.custom-dropdown .arrow {
+display: inline-block;
+transition: transform 0.3s ease;
+margin-left: 10px;
+}
+
+.custom-dropdown .arrow.open {
+transform: rotate(180deg);
+}
+
+/* Selected counter display in header */
+ .selected-counter {
+margin-left: auto;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+/* Dropdown content */
+.custom-dropdown .dropdown-content {
+display: none;
+flex-direction: column;
+padding: 15px;
+}
+
+/* Dropdown row */
+.form-group {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+padding: 10px;
+border-radius: 8px;
+transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.form-group:hover {
+background-color: #f0f8ff;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+}
+
+.custom-dropdown .form-group:active {
+background-color: #d0ecff;
+transform: scale(0.98);
+}
+
+.custom-dropdown .form-group.selected {
+background-color: #e0f4ff;
+border: 1px solid #03a9f4;
+box-shadow: 0 0 5px rgba(3, 169, 244, 0.3);
+}
+
+/* Counter styles */
+ .counter {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.btn {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: none;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+background: #eee;
+color: #333;
+}
+
+ .count {
+min-width: 20px;
+text-align: center;
+font-size: 16px;
+font-weight: 600;
+}
+
+/* Style 1 */
+ .style1 {
+  background: #fff;
+  box-shadow: 0px 0px 5px lightgray;
+  border-radius: 20px;
+  padding: 5px 10px;
+  max-width: 160px;
+}
+
+.cart-button-style1 {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+ .style1 .plus {
+background: #03a9f4;
+color: white;
+}
+
+.style1 .minus {
+background: transparent;
+border: 1px solid lightgray;
+}
+
+/* Style 2 */
+.style2 {
+  background: #fdfdfd;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  max-width: 160px;
+  padding: 0;
+
+}
+
+.style2 .plus {
+  background: #03a9f4;
+  color: white;
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.style2 .minus {
+background: #E7F0F4;
+border-radius: 0;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+/* Style 3 */
+.style3{
+  max-width: 160px;
+
+}
+.style3 .custom-input {
+display: flex;
+border: 1px solid #ccc;
+border-radius: 4px;
+overflow: hidden;
+width: 80px;
+align-items: center;
+justify-content: space-between;
+background-color: white;
+}
+
+ .style3 .value {
+flex: 1;
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+color: #333;
+}
+
+ .style3 .arrows {
+display: flex;
+flex-direction: column;
+gap: 2px;
+}
+
+ .style3 .arrow {
+width: 35px;
+height: 24px;
+border: none;
+cursor: pointer;
+font-size: 14px;
+color: white;
+}
+
+ .style3 .arrow.up {
+background-color: #03a9f4;
+}
+
+ .style3 .arrow.down {
+background-color: #9e9e9e;
+}
+
+/* Style 4 */
+ .style4 {
+background: #fff;
+box-shadow: 0px 0px 5px lightgray;
+border-radius: 20px;
+max-width: 160px;
+padding: 5px 10px;
+
+}
+
+ .style4 .btn {
+border-radius: 5px;
+padding: 0 10px;
+font-size: 18px;
+background-color: transparent;
+color: #03a9f4;
+}
+
+/* Style 5 */
+ .style5 {
+background: #fff;
+box-shadow: 0px 0px 5px lightgray;
+border-radius: 0;
+padding: 5px 10px;
+max-width: 160px;
+
+}
+
+ .style5 .plus {
+background-color: #03a9f4;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+ .style5 .minus {
+background: #f1f1f1;
+}
+
+/* Style 6 */
+ .style6 {
+background: #fff;
+box-shadow: 0px 0px 5px lightgray;
+border-radius: 20px;
+padding: 5px 10px;
+max-width: 160px;
+
+}
+
+ .style6 .plus,
+ .style6 .minus {
+background: transparent;
+color: #333;
+border: 1px solid lightgray;
+}
+
+
+
+
+/* add to caer button 2 */
+
+/* From Uiverse.io by doniaskima */ 
+.btn-23,
+.btn-23 *,
+.btn-23 :after,
+.btn-23 :before,
+.btn-23:after,
+.btn-23:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-23 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-23:disabled {
+  cursor: default;
+}
+
+.btn-23:-moz-focusring {
+  outline: auto;
+}
+
+.btn-23 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-23 [hidden] {
+  display: none;
+}
+
+.btn-23 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-23 span {
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+.btn-23 .marquee {
+  --spacing: 5em;
+  --start: 0em;
+  --end: 5em;
+  -webkit-animation: marquee 1s linear infinite;
+  animation: marquee 1s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 0;
+  position: relative;
+  text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
+    #fff calc(var(--spacing) * -2) 0;
+}
+
+.btn-23:hover .marquee {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+
+.btn-23:hover .text {
+  opacity: 0;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+
+  to {
+    transform: translateX(var(--end));
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+
+  to {
+    transform: translateX(var(--end));
+  }
+}
+
+  /* add to cart 3  */
+
+  /* From Uiverse.io by mrhyddenn */ 
+.btn3 {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+}
+
+.btn3::before,
+.btn3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7D8082;
+  transition: all .15s ease;
+}
+
+.btn3::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.btn3::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.btn3:active,
+.btn3:focus {
+  outline: none;
+}
+
+.btn3:active::before,
+.btn3:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.btn3:active::before {
+  top: 3px;
+}
+
+.btn3:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #ff4655;
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+.button_text {
+  position: relative;
+}
+
+.btn3:hover {
+  color: #0f1923;
+}
+
+.btn3:hover .button_sl {
+  width: calc(100% + 15px);
+}
+
+.btn3:hover .button_lg::after {
+  background-color: #fff;
+}
+
+
+  /* add to cart 4 */
+
+  /* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  background: #a370f0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+/*  button 5 */
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button555 {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d !important;
+  /* background-color: #3aa856 !important; */
+}
+
+.button555, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button555 .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button555 .button__icon {
+  position: absolute;
+  transform: translateX(110px);
+  height: 100%;
+  top: 0;
+  width: 39px;
+  /* background-color: #34974d; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button555 .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button555:hover {
+  background: #34974d;
+}
+
+.button555:hover .button__text {
+  color: transparent;
+}
+
+.button555:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button555:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button555:active {
+  border: 1px solid #2e8644;
+}

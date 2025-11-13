@@ -1,0 +1,77 @@
+body { margin: 0; }
+
+.recommendation-container-slider { margin: 0 20px 0 0; }
+
+.recommendation-container-slider .slider { position: relative; }
+
+.recommendation_banner_slider .grid-container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 20px;
+    align-items: center;
+    margin: 2rem auto;
+}
+.recommendation_banner_slider .grid-image{
+    display: flex;
+    justify-content: center;
+}
+.recommendation_banner_slider .grid-image img {
+    width: auto;
+    height: auto;
+}
+
+.recommendation_banner_slider .grid-content {
+    text-align: left;
+}
+.recommendation_banner_slider .grid-content p{
+    max-width: 75%;
+}
+/* Custom Navigation Buttons */
+.recommendation-container-slider .slide-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    background: transparent;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: none;
+    padding: 0;
+}
+
+.recommendation-container-slider .slide-arrow.prev-arrow { left: 0; }
+.recommendation-container-slider .slide-arrow.next-arrow { right: 0; }
+
+.recommendation-container-slider .slide-arrow img.recommendation_img {
+    width: 25px;
+    height: auto;
+}
+
+.recommendation-container-slider .slide-arrow.slick-disabled { cursor: not-allowed; opacity: 0.5; }
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .recommendation_banner_slider .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .recommendation_banner_slider .grid-image, .recommendation_banner_slider .grid-content {
+        text-align: center;
+    }
+
+    .recommendation_banner_slider .grid-content {
+        padding: 0 20px;
+    }
+    .recommendation-container-slider .slide-arrow{
+        display: none;
+    }
+    .recommendation_banner_slider .grid-content p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body { display: none; }
+}

@@ -1,0 +1,145 @@
+.eosh-header {
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px 30px;
+   min-height: auto;
+}
+.eosh-home-btn {
+   background: #3f4eae !important;
+}
+.eosh-home-btn:hover {
+   background: #77A833 !important;
+}
+
+.eosh-btn .tabs {
+   box-shadow: none;
+   justify-content: flex-end;
+}
+
+.eosh-btn .tabs a {
+   font-size: 16px;
+   border: none;
+   padding: 0 10px;
+   border-radius: 5px;
+   color: #ffffff;
+   background: #77A833;
+   margin: 0 1.6rem;
+   line-height: 3.6rem;
+}
+
+.eosh-btn .tabs a:hover,
+.eosh-btn .tabs a:active {
+   outline: none;
+   color: #fafafa;
+   background-color: #3f4eae;
+   border: none;
+}
+
+.eosh-header + section {
+   background: linear-gradient(180deg, #0059C7 0%, #01B5CE 48.96%),linear-gradient(0deg, #ECECEC, #ECECEC);
+   padding: 40px;
+   margin-top: 0;
+   max-width: 100%;
+   width: auto;
+}
+
+.eosh_faq_box {
+   background-color: #fafafa;
+   margin: auto;
+   border-radius: 10px;
+   width: 100%;
+   padding: 15px;
+}
+
+.eosh_faq{
+   margin: 10px 0;
+   background-color: #ffffff;
+   padding: 5px 15px;
+   border-radius: 10px;
+   border: 1px solid #e7e7e7;
+}
+
+.eosh_question {
+   color: #111111;
+   font-size: 15px;
+   font-weight: 600;
+   padding: 10px 0;
+   background: transparent;
+   box-shadow: none;
+   border-radius: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;;
+   cursor: pointer;
+}
+
+.eosh_question span {
+   width: 15px;
+   height: 20px;
+   display: block;
+   margin-right: 5px;
+}
+
+.eosh_answer {
+   overflow: hidden;
+   max-height: 0;
+   transition: max-height .2s ease-out;
+}
+
+.eosh_chat-with-us {
+   font-size: 16px;
+   border: none;
+   border-radius: 5px;
+   color: #ffffff;
+   background: #77A833;
+   border: 0;
+   box-shadow: none;
+   margin: 1rem 0;
+}
+
+.eosh_btns,
+.eosh_answer .eosh_chat-with-us {
+   display: block;
+}
+
+.eosh_answer .eosh_chat-with-us span {
+   font-size: 10px;
+}
+
+.eosh_answer p {
+   color: #616161;
+   font-size: 14px;
+   /*padding: 0 0 0 5px;*/
+}
+
+.eosh_answer .card {
+   margin-left: 10px;
+}
+
+@media (max-width: 320px) {
+   body {
+       display: none;
+   }
+}
+
+@media (max-width: 680px) {
+   .eosh-header {
+       flex-direction: column;
+   }
+
+   .tabs {
+       justify-content: center;
+   }
+
+   .eosh_faq_box {
+       padding: 10px;
+   }
+
+   .eosh-header + section {
+       padding: 20px;
+       display: flex;
+   }
+}

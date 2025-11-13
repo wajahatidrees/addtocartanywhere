@@ -1,0 +1,124 @@
+img { max-width: 100%;}
+
+.badges{ display: flex; justify-content: center; align-items: flex-start; gap: 25px; margin-top: 2rem;}
+.top-progress .badges{margin-top: 0;}
+
+.badges .badge_details{ color: #414141; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-direction: column; position: relative;}
+
+.badges .badge_details .badge_icon{ background-color: rgb(255, 0, 0); border-radius: 50px; width: 25px; height: 25px; padding: 15px; position: relative;  display: inline-block; box-sizing: unset;}
+
+.badges .badge_icon.active{background-color: #77a833}
+
+.badges .badge_details .badge_title{ font-size: 1.2em; line-height: 2rem; color: #ffffff; text-align: center;}
+
+.top-progress .badges .badge_details .badge_title { color: #191919;}
+
+.badges .badge_details:after { content: ""; display: block; background-color: #069ce2; color: #D1D1D1; height: 4px; width: 100%; z-index: -1; top: 25px; position: absolute; left: 50%;}
+
+.badges .badge_details:before { content: ""; display: block; background-color: #069ce2; color: #D1D1D1; height: 4px; width: 100%; z-index: -1; top: 25px; position: absolute; left: 0%;}
+
+.badges .badge_details:first-child::before{display: none;}
+
+.badges .badge_details:last-child:after{display: none;}
+
+.badges .badge_details:last-child::before{display: block; right:50%; left: unset;}
+
+
+@media screen and (max-width: 650px) {
+    .badges{ width: 100%; overflow: auto; gap: 15px; justify-content: flex-start; }
+}
+
+@media screen and (min-width:200px)  and (max-width:767px) {
+    .badges .badge_details { min-width: 120px; gap: 10px;}
+
+    .badges .badge_details .badge_icon{ padding: 15px; width: 20px; height: 20px;}
+
+    .badges .badge_details .badge_title{ font-size: 16px; line-height: 22px;}
+
+    .badges .badge_details:after, .badges .badge_details:before { top: 20px; }
+}
+
+
+/* Define loader colors as variables */
+:root {
+    --loader-background-color: #ffffff;
+    --loader-highlight-color: #DEDEDE;
+}
+
+.skelton_row { display: flex; justify-content: center; align-items: center; gap: 30px; overflow: auto; }
+
+.skelton { position: relative; }
+
+.skelton:after { content: ""; display: block; background: linear-gradient(90deg, var(--loader-background-color) 25%, var(--loader-highlight-color) 50%, var(--loader-background-color) 75%); background-size: 200% 100%; color: #ffffff; height: 7px; width: 100%; z-index: -1; top: 25px; position: absolute; left: 55%; animation: loading 5s infinite ease-in-out; }
+
+.skelton::before { content: ""; display: block; background: linear-gradient(90deg, var(--loader-background-color) 25%, var(--loader-highlight-color) 50%, var(--loader-background-color) 75%); background-size: 200% 100%; color: #ffffff; height: 7px; width: 100%; z-index: -1; top: 25px; position: absolute; left: 0%; animation: loading 5s infinite ease-in-out; }
+
+.skelton:first-child::before{display: none;}
+
+.skelton:last-child:after{display: none;}
+
+.skelton:last-child::before{display: block; right:50%; left: unset;}
+
+.skeleton-loader { width: 120px; height: 10px; background: linear-gradient(90deg, var(--loader-background-color) 25%, var(--loader-highlight-color) 50%, var(--loader-background-color) 75%); background-size: 200% 100%; animation: loading 5s infinite ease-in-out; border-radius: 8px; margin-bottom: 20px; }
+
+.avatar-skeleton { width: 25px; height: 25px; padding: 25px; box-sizing: border-box; background: linear-gradient(90deg, var(--loader-background-color) 25%, var(--loader-highlight-color) 50%, var(--loader-background-color) 75%); background-size: 200% 100%; animation: loading 2s infinite ease-in-out; border-radius: 50%; margin: 0 auto 20px }
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/*--------------------------------- TopBar Loader -------------------------*/
+
+/*.topBarLoader-container {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*    gap: 20px;*/
+/*}*/
+
+/*.topBarLoader-item {*/
+/*    width: 120px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.icon-topBarLoader {*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    border-radius: 8px;*/
+/*    background: linear-gradient(90deg, var(--loader-background-color) 25%, var(--loader-highlight-color) 50%, var(--loader-background-color) 75%);*/
+/*    background-size: 200% 100%;*/
+/*    animation: loading 1.5s infinite ease-in-out;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.text-topBarLoader {*/
+/*    width: 80px;*/
+/*    height: 12px;*/
+/*    background: linear-gradient(90deg, var(--loader-background-color) 25%, var(--loader-highlight-color) 50%, var(--loader-background-color) 75%);*/
+/*    background-size: 200% 100%;*/
+/*    animation: loading 1.5s infinite ease-in-out;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+/*.topBarLoader-logo {*/
+/*    width: 180px;*/
+/*    height: 50px;*/
+/*    background: linear-gradient(90deg, var(--loader-background-color) 25%, var(--loader-highlight-color) 50%, var(--loader-background-color) 75%);*/
+/*    background-size: 200% 100%;*/
+/*    animation: loading 1.5s infinite ease-in-out;*/
+/*    border-radius: 8px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.topBarLoader-apps {*/
+/*    display: flex;*/
+/*    gap: 20px;*/
+/*}*/

@@ -1,0 +1,49 @@
+img { max-width: 100%;}
+
+.badges .badge_icon{background-color: #465cd1; border-radius: 50px; width: 25px; height: 25px; padding: 20px;}
+.badges .badge_icon.active{background-color: #00BF63 !important;}
+
+.badges{ box-sizing: border-box;display: flex; justify-content: center; align-items: center; padding-inline: 25px; margin: 5rem 0;}
+
+.badges .badge{box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;}
+
+.badges .badge_details{padding-top: 0px; color: #414141; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-direction: column; width: 100%; }
+
+.badges .badge_title{ font-size: 20px; line-height: 28px; color: #ffffff}
+
+.top-progress .badges .badge_title { color: #000000}
+
+.badges .badge:after { content: ""; background-color: #c8dc00; color: #D1D1D1; height: 4px; width: 120px; top: -25px; position: relative; }
+
+.badges .badge:last-child::after{display: none;}
+
+@media screen and (max-width: 767px) {
+    .badges .badge {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+@media screen and (min-width:200px)  and (max-width:1024px) {
+    .badges .badge_icon{ padding: 20px;}
+
+    .badges{ width: 100%; flex-wrap: wrap; gap: 30px; }
+
+    .badges .badge_details{padding-top: 0px; color: #414141; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-direction: column; flex-wrap: wrap;}
+
+    .badges   .badge_title{ font-size: 20px; line-height: 28px; color: #191919}
+
+    .badges .badge:after { display: none; }
+
+    .badges .badge:last-child::after{display: none;}
+}
+
+@media screen and (min-width:768px)  and (max-width:1024px) {
+    .badges .badge:after { content: ""; background-color: #c8dc00; color: #D1D1D1; height: 4px; width: 50px; top: -20px; position: relative; display: block; }
+}
+
+@media screen and (min-width:1024px)  and (max-width:1480px) {
+    .badges{ flex-wrap: wrap;}
+
+    .badges .badge:after { content: ""; background-color: #c8dc00; color: #D1D1D1; height: 4px; width: 100px; top: -20px; position: relative; display: block; }
+}

@@ -1,0 +1,259 @@
+
+<script crossorigin="anonymous" defer="defer" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script crossorigin="anonymous" defer="defer" integrity="sha256-..." src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'quantitybutton.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'buttondropdown.css' | asset_url }}">
+<link type="text/css" href="{{ 'topslider.css' | asset_url }}" rel="stylesheet">
+
+{% comment %} <link type="text/css" href="{{ 'buttondropdown.css' | asset_url }}" rel="stylesheet"> {% endcomment %}
+
+<script src="{{ 'storefront.js' | asset_url }}" defer></script>
+<script  src="{{ 'button.js' | asset_url }}" defer></script> 
+
+
+<script  id="eosh-script">
+
+      function sanitizeInput(input) {
+        // Remove any improper quotes 
+        return input.replace(/[”“]/g, '"').replace(/""/g, '"');
+      }
+
+      // Function to process each variant
+      function processVariant(option1, option2, option3) {
+        var option1 = sanitizeInput(option1);
+        var option2 = sanitizeInput(option2);
+        var option3 = sanitizeInput(option3);
+      }
+      
+      {% assign collectionProducts = collection.products %}
+
+      var productsData = [];
+      {% if template == "collection" or collectionProducts != null  %}
+
+          //  console.log('123');
+            {% for product in collection.products %}
+                
+              var values1 = [];
+              var values2 = [];
+              var values3 = [];
+
+              {% for variant in product.variants %}
+                option1 = `{{variant.option1}}`;
+                option2 = `{{variant.option2}}`;
+                option3 = `{{variant.option3}}`;
+
+                processVariant(option1, option2, option3);
+
+                if (option1 && values1.indexOf(option1) == -1)
+                  values1.push(option1)
+
+                if (option2 && values2.indexOf(option2) == -1)
+                  values2.push(option2)
+
+                if (option3 && values3.indexOf(option3) == -1)
+                  values3.push(option3)
+              {% endfor %}
+
+              productsData[productsData.length] = {
+                {% assign optionslength = product.options | size %}
+                {% assign loopSize = optionslength | minus:1 %}
+                handle: "{{product.handle}}",
+                variants: {{product.variants | json}},
+                options: [
+                  {% for i in (0..loopSize) %}
+                    {
+                      name: "{{ product.options[i] }}",
+                      values: "{{i}}" == 0 ? values1 : "{{i}}" == 1 ? values2 : "{{i}}" == 2 ? values3 : ''},
+                  {% endfor %}
+                ]
+              }
+            {% endfor %}
+      {% elsif shop.domain == 'friske.com' and template == 'collection.cookie-box-collection' %}
+          {% for product in collection.products %}
+                    
+            var values1 = [];
+            var values2 = [];
+            var values3 = [];
+
+            {% for variant in product.variants %}
+              option1 = `{{variant.option1}}`;
+              option2 = `{{variant.option2}}`;
+              option3 = `{{variant.option3}}`;
+
+              processVariant(option1, option2, option3);
+
+              if (option1 && values1.indexOf(option1) == -1)
+                values1.push(option1)
+
+              if (option2 && values2.indexOf(option2) == -1)
+                values2.push(option2)
+
+              if (option3 && values3.indexOf(option3) == -1)
+                values3.push(option3)
+            {% endfor %}
+
+            productsData[productsData.length] = {
+              {% assign optionslength = product.options | size %}
+              {% assign loopSize = optionslength | minus:1 %}
+              handle: "{{product.handle}}",
+              variants: {{product.variants | json}},
+              options: [
+                {% for i in (0..loopSize) %}
+                  {
+                    name: "{{ product.options[i] }}",
+                    values: "{{i}}" == 0 ? values1 : "{{i}}" == 1 ? values2 : "{{i}}" == 2 ? values3 : ''},
+                {% endfor %}
+              ]
+            }
+          {% endfor %}
+      {% elsif template == "search" %}
+
+            {% for product in search.results %}
+
+              var values1 = [];
+              var values2 = [];
+              var values3 = [];
+
+              {% for variant in product.variants %}
+                var option1 = `{{variant.option1}}`;
+                var option2 = `{{variant.option2}}`;
+                var option3 = `{{variant.option3}}`;
+
+                if (option1 && values1.indexOf(option1) == -1)
+                  values1.push(option1)
+
+                if (option2 && values2.indexOf(option2) == -1)
+                  values2.push(option2)
+
+                if (option3 && values3.indexOf(option3) == -1)
+                  values3.push(option3)
+              {% endfor %}
+
+              productsData[productsData.length] = {
+                {% assign optionslength = product.options | size %}
+                {% assign loopSize = optionslength | minus:1 %}
+                handle: "{{product.handle}}",
+                variants: {{product.variants | json}},
+                options: [
+                  {% for i in (0..loopSize) %}
+                    {
+                      name: "{{ product.options[i] }}",
+                      values: "{{i}}" == 0 ? values1 : "{{i}}" == 1 ? values2 : "{{i}}" == 2 ? values3 : ''},
+                  {% endfor %}
+                ]
+              }
+
+            {% endfor %}
+
+      {% elsif template == "index" %}
+    
+              {% assign meta_size = app.metafields.featured_collections | size %}
+              {% if meta_size == 0 %}
+                {% for product in collections['all'].products limit:50 %}
+          
+                    var values1 = [];
+                    var values2 = [];
+                    var values3 = [];
+            
+                    {% for variant in product.variants %}
+                      var option1 = `{{variant.option1}}`;
+                      var option2 = `{{variant.option2}}`;
+                      var option3 = `{{variant.option3}}`;
+            
+                      if (option1 && values1.indexOf(option1) == -1)
+                        values1.push(option1)
+            
+                      if (option2 && values2.indexOf(option2) == -1)
+                        values2.push(option2)
+            
+                      if (option3 && values3.indexOf(option3) == -1)
+                        values3.push(option3)
+                    {% endfor %}
+            
+                    productsData[productsData.length] = {
+                      {% assign optionslength = product.options | size %}
+                      {% assign loopSize = optionslength | minus:1 %}
+                      handle: "{{product.handle}}",
+                      variants: {{product.variants | json}},
+                      options: [
+                        {% for i in (0..loopSize) %}
+                          {
+                            name: "{{ product.options[i] }}",
+                            values: "{{i}}" == 0 ? values1 : "{{i}}" == 1 ? values2 : "{{i}}" == 2 ? values3 : ''
+                          },
+                        {% endfor %}
+                      ]
+                    }
+
+                {% endfor %}
+              {% else %}
+                {% assign collection_length = meta_size | minus: 1 %}
+
+                {% for i in (0..collection_length) %}
+                  {% assign featured_key = 'featured_' | append: i %}
+                  {% for product in collections[app.metafields.featured_collections[featured_key]].products limit: 50 %}
+                  
+                    var values1 = [];
+                    var values2 = [];
+                    var values3 = [];
+            
+                    {% for variant in product.variants %}
+                      var option1 = "{{variant.option1}}";
+                      var option2 = "{{variant.option2}}";
+                      var option3 = "{{variant.option3}}";
+            
+                      if (option1 && values1.indexOf(option1) == -1)
+                        values1.push(option1)
+            
+                      if (option2 && values2.indexOf(option2) == -1)
+                        values2.push(option2)
+            
+                      if (option3 && values3.indexOf(option3) == -1)
+                        values3.push(option3)
+                    {% endfor %}
+            
+                    productsData[productsData.length] = {
+                      {% assign optionslength = product.options | size %}
+                      {% assign loopSize = optionslength | minus:1 %}
+                      handle: "{{product.handle}}",
+                      variants: {{product.variants | json}},
+                      options: [
+                        {% for i in (0..loopSize) %}
+                          {
+                            name: "{{ product.options[i] }}",
+                            values: "{{i}}" == 0 ? values1 : "{{i}}" == 1 ? values2 : "{{i}}" == 2 ? values3 : ''
+                          },
+                        {% endfor %}
+                      ]
+                    }
+
+                  {% endfor %}
+                {% endfor %}
+
+
+              {% endif %}
+        
+      {% endif %} 
+
+    {% comment %} console.log('page template {{template}}'); {% endcomment %}
+  
+
+     window.productsData = JSON.stringify(productsData);
+
+     window.currency_with_format = "{{ shop.money_with_currency_format }}"
+
+</script> 
+
+
+
+{% schema %}
+{
+  "name": "new add to cart",
+  "target": "head",
+  "settings": []
+}
+{% endschema %}

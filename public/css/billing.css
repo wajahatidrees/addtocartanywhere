@@ -1,0 +1,247 @@
+.eosh_billing-header {
+    padding: 0;
+    background: transparent;
+    margin: 10px 0 40px;
+    box-shadow: none;
+}
+
+.eosh_billing-header  h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.eosh_plan-btn {
+    background: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.eosh_plan-btn .eosh_monthly-btn,
+.eosh_plan-btn .eosh_yearly-btn {
+    width: 200px;
+    border: 0;
+    box-shadow: none;
+    background: none;
+}
+
+.eosh_plan-btn .eosh_monthly-btn:hover,
+.eosh_plan-btn .eosh_yearly-btn:hover,
+.eosh_plan-btn .eosh_monthly-btn:focus,
+.eosh_plan-btn .eosh_yearly-btn:focus  {
+    background: #014A6D;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.eosh_plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.eosh_plans .eosh_card {
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 0;
+    width: 400px;
+}
+
+.eosh_plans .eosh_card * {
+    margin-bottom: 5px;
+}
+
+.eosh_plans .eosh_card h2 {
+    color: #014A6D;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.eosh_plans .eosh_card p {
+    color: #069CE2;
+}
+
+.eosh_plans .eosh_card ul {
+    margin-inline-start: 5px;
+    margin-top: 20px;
+}
+
+.eosh_plans .eosh_card ul, .eosh_plans .eosh_card ul li {
+    list-style-type: none;
+    color: #353535;
+}
+
+li i.icon-checkmark {
+    margin-right: 10px;
+}
+
+.eosh_card .icon-checkmark:after {
+    min-width: 1.3rem;
+    min-height: 1.3rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12' fill='none'%3E%3Cpath d='M1 6L6 11L16 1' stroke='%23353535' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+    background-size: 14px 12px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.eosh_card-active [class^="icon-"]:after, .eosh_card-active [class*=" icon-"]:after {
+    min-width: 1.3rem;
+    min-height: 1.3rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12' fill='none'%3E%3Cpath d='M1 6L6 11L16 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+    background-size: 14px 12px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.eosh_yearly .eosh_card .eosh_price {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    height: 50px;
+    border-bottom: 1px solid #99999963;
+}
+
+.eosh_monthly .eosh_card .eosh_price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    height: 50px;
+    border-bottom: 1px solid #99999963;
+}
+
+.eosh_plans .eosh_card.eosh_card-active .eosh_price {
+    border-bottom: 1px solid #ffffff63;
+}
+
+.eosh_yearly .eosh_card .eosh_save-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    height: 50px;
+}
+
+.eosh_yearly .eosh_price .eosh_original-price {
+    color: #B1B1B1;
+    text-decoration: line-through;
+    margin-top: 5px;
+}
+
+.eosh_plans .eosh_card-btn {
+    border: 1px solid #014A6D;
+    background: transparent;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    color: #014A6D;
+    padding: .7rem 1.6rem;
+    text-align: center;
+    display: block;
+}
+
+.eosh_plans a.eosh_card-btn:hover {
+    background: #014A6D;
+    color: #fff;
+    border: 0;
+}
+
+.eosh_plan-btn .eosh_active,
+.eosh_card-btn.eosh_active {
+    background: #014A6D;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.eosh_plans .eosh_card.eosh_card-active {
+    background: linear-gradient(180deg, #0059C7 0%, #01B5CE 48.96%),linear-gradient(0deg, #ECECEC, #ECECEC);
+}
+
+.eosh_plans .eosh_card.eosh_card-active * {
+    color: #fff;
+}
+
+.eosh_yearly {
+    display: none;
+}
+
+.eosh_plans .eosh_discount {
+    z-index: 1111;
+    position: absolute;
+    background: #014A6D;
+    right: 0;
+    top: 25px;
+    padding: 4px 6px;
+    color: #fff;
+    border-radius: 15px 0 0 15px;
+    font-weight: 600;
+    width: 70px;
+    height: 25px;
+}
+
+.eosh_plans .eosh_discount p {
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+}
+
+.eosh_plans .eosh_card.eosh_card-active .eosh_discount {
+    background: #fff;
+}
+
+.eosh_plans .eosh_card.eosh_card-active .eosh_discount p {
+    color: #014A6D;
+}
+
+@media (max-width: 320px) {
+    body {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .eosh_plan-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .eosh_plan-btn .eosh_monthly-btn, .eosh_plan-btn .eosh_yearly-btn {
+        width: auto;
+    }
+
+    .eosh_plan-btn .eosh_monthly-btn:last-child, .eosh_plan-btn .eosh_yearly-btn:last-child {
+        margin-bottom: 0;
+    }
+    .eosh_plans {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .eosh_plans .eosh_card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .eosh_plans {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+
+    .eosh_plans {
+        width: auto;
+        margin: 20px;
+    }
+}

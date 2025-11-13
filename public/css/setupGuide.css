@@ -1,0 +1,138 @@
+.setupGuide_popup-header {
+    position: relative;
+}
+
+.setupGuide_dropdown_btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.dropdownHeader{
+    cursor: pointer;
+}
+.setupGuide_dropdown_btn button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.setupGuide_dropdown_btn button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.setupGuide_popup.setupGuide_active .setupGuide_chevron_down {
+    transform: rotate(180deg);
+}
+
+.setupGuide_popup:hover .setupGuide_dropdown_btn {
+    display: flex;
+    align-items: center;
+}
+
+.setupGuide_guide {
+    padding: 12px;
+    display: none;
+}
+
+.setupGuide_popup.setupGuide_active .setupGuide_guide {
+    display: block;
+}
+
+.setupGuide_task {
+    padding: 10px;
+}
+
+.setupGuide_task:last-child {
+    border-bottom: none;
+}
+
+.setupGuide_task-header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.setupGuide_task.open {
+    background: rgba(243, 243, 243, 1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.setupGuide_custom-checkbox {
+    line-height: 0;
+}
+/* Hide default checkbox */
+.setupGuide_custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.setupGuide_tab_heading {
+    font-size: 15px;
+    font-weight: 650;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+/* Circle styles */
+.setupGuide_checkbox-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px dashed #333;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* When checkbox is checked */
+.setupGuide_checkbox-input:checked + .setupGuide_checkbox-circle {
+    background-color: #333;
+    border: none;
+}
+
+/* Checkmark styles */
+.setupGuide_checkbox-input:checked + .setupGuide_checkbox-circle::after {
+    content: url('../assets/images/icons8-tick.svg');
+    color: white;
+    font-size: 12px;
+}
+
+
+.setupGuide_task-content {
+    display: none;
+    padding: 10px 0;
+    font-size: 14px;
+    margin: 0 25px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.setupGuide_task-content .setupGuide_image svg {
+    margin-top: -45px;
+}
+
+@media screen and (max-width: 767px) {
+    .setupGuide_dropdown_btn {
+        top: 0;
+        right: 0;
+    }
+
+    .setupGuide_task-content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 5px 0;
+    }
+
+    .setupGuide_task-content .setupGuide_image svg {
+        margin-top: 0;
+    }
+}
